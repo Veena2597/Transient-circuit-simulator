@@ -1,0 +1,19 @@
+
+This folder contains 7 *.dat files corresponding to 7 *.ckt benchmark files.
+
+Each *.dat file contains parsed information of the corresponding benchmark *.ckt.
+
+The files can be loaded to MATLAB by
+
+	load -mat *.dat
+
+The above line is equivalent to
+
+	cparse_init;
+	parser_init;
+	[LINELEM, NLNELEM, INFO, NODES, LINNAME, NLNNAME, PRINTNV, PRINTBV, PRINTBI, PLOTNV, PLOTBV, PLOTBI] = parser(file);
+
+If there is any problem with the parser, you could avoid calling the parser by using "load -mat *.dat".
+
+
+
